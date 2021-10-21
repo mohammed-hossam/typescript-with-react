@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Test from './components/Test';
-import Welcome from './components/Welcome';
+import FunctionTest from './components/FunctionTest';
+import ClassTest from './components/ClassTest';
+import Todos from './components/Todos';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Welcome color="red" />
-        <Test color="blue" />
+        <ClassTest color="red" />
+        <FunctionTest color="blue" />
+        <Todos />
       </div>
     );
   }

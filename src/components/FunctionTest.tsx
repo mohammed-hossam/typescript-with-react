@@ -3,8 +3,8 @@ interface AppProps {
   color: string;
 }
 
-function Test(props: AppProps): JSX.Element {
+function FunctionTest(props: AppProps): JSX.Element {
   return <div>{props.color}</div>;
 }
 
-export default Test;
+export default FunctionTest;

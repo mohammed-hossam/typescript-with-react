@@ -7,7 +7,7 @@ interface AppState {
   counter: number;
 }
 //components has 2 optinal generics with default empty object=> p and s
-class Welcome extends Component<AppProps, AppState> {
+class ClassTest extends Component<AppProps, AppState> {
   constructor(props: AppProps) {
     super(props);
     this.state = { counter: 0 };
@@ -35,4 +35,4 @@ class Welcome extends Component<AppProps, AppState> {
   }
 }
 
-export default Welcome;
+export default ClassTest;
