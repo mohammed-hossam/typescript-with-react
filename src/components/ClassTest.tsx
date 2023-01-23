@@ -11,6 +11,7 @@ class ClassTest extends Component<AppProps, AppState> {
   constructor(props: AppProps) {
     super(props);
     this.state = { counter: 0 };
+    this.onIncrement = this.onIncrement.bind(this);
   }
   //   state = { counter: 0 };
   //in js this is equivilant to using constuctor and super, but in ts this is different; as this declaration will override the default that is an empty object for generic <s>.
@@ -18,9 +19,9 @@ class ClassTest extends Component<AppProps, AppState> {
   onIncrement(): void {
     this.setState({ ...this.state, counter: this.state.counter + 1 });
   }
-  onDecrement(): void {
+  onDecrement = (): void => {
     this.setState({ ...this.state, counter: this.state.counter - 1 });
-  }
+  };
 
   render() {
     return (
